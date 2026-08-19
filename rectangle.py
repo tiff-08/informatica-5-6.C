@@ -6,8 +6,9 @@ def main():
     print("0" * width)
     print("0" * width)
 
-    p = (5 * 2) + (width * 2)
-    print("Perimeter:", p)
+    print(f"The Perimeter of the area is equal to: ",(5 + width)*2)
+    print(f"The area is equal to: ", (5 * width))
+    print(f"The diagonal of the rectangle is equal to: ", ((5**2)+(width**2))**0.5)
 
 if __name__ == "__main__":
         main()
