@@ -14,7 +14,11 @@ def main():
     else:
          print("Not valid option")
 
-    print("Enter exact altitud: ")
+    print(input("Enter exact altitud: "))
+
+    if altitud1 == "Thermosphere":
+        result = (200 - 50) + (35/0.2) + (38/0.075) + (12/0.02)
+        print(result)
 
 
 
