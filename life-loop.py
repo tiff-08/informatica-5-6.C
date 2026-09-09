@@ -1,12 +1,30 @@
 import time
 def main():
     print("Remember drink your daily water")
-    input("do you consider yourself a sendentary person, Moderate activity person or a sportman? ")
-    reminder = 5
+    print("")
+    person = input("do you consider yourself a sendentary person, Moderate or a sportman? ").strip().lower()
+    weight = float(input("What is your weight(kg)? "))
 
-    while reminder >0:
-          print("drink water")
-          time.sleep(10)
+    if person == "sedentary":
+          total = weight * 30
+
+    elif person == "moderate":
+          total = weight * 35
+
+    elif person == "sportsman":
+          total = weight * 40
+
+    else:
+          print("that is not an option")
+
+    print(f"you need to drink {total} ml every day " )
+    print(" timer is set for every hour (8 total)")
+    print(f"drink {total/5} ml every hour")
+
+    reminder = 8
+    while reminder > 0:
+          print("drink water!")
+          time.sleep(2)
           reminder = reminder - 1
 
 
