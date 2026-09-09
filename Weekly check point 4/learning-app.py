@@ -1,17 +1,45 @@
 import random
 def main():
-        print("Adding with Terminal")
-        number1 = random.randint(10, 99)
-        number2 = random.randint(10, 99)
+    print("MATEMAKINA!") #matematicacitametam
+    star = "⭐"
+    streak = 0
+    a = ""
+    b = ""
+    op = ""
+    answer = ""
 
-        print(f"what is {number1} + {number2}")
+    while streak != 3:
+        a = random.randint(10,99)
+        b = random.randint(10,99)
+        op = a + b
 
-        add = number1 + number2
-        if result != add:
-                print("Incorrect")
-                print(f"The answer was {add}")
+        print(f"What is {a} + {b}?")
+        answer = int(input("Your answer: "))
+        if answer != op:
+            print("Incorrect.")
+            print(f"The answer was {op}")
+            if streak > 0:
+                streak -= streak
+        elif answer == op:
+            print("Correct!")
+            streak += 1
+            if streak == 1:
+                star == star
+            elif streak == 2:
+                star = "⭐⭐"
+            else:
+                star = "⭐⭐⭐"
+
+            print(f"Streak: {star}")
+
+        elif streak == 3:
+            break
+        else:
+            print("Invalid option.")
+
 
 
 
 if __name__ == "__main__":
-        main()
+    main()
+    
