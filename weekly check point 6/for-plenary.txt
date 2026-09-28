@@ -1,0 +1,6 @@
+1. Write a description for a while loop.
+    while loop is to repeat a condition while it is true.
+2. Write a description for a for loop.
+    for loop is when you go through a specific range or sequance.
+3. Compare a while loop to a for loop.
+    while is for conditions and for is for a sequence or count.
