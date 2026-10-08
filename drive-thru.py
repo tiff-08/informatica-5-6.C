@@ -12,25 +12,25 @@ def welcome():
         print(f"{i+1}. {menu[i]}")
 
 def get_item(order):
-    kitchen = ["🍔","🍟","🥤","🍦","🍪"]
-    if 1 <= order <=5:
-        print(kitchen[order - 1])
+    #kitchen = ["🍔","🍟","🥤","🍦","🍪"]
+    #if 1 <= order <=5:
+       # print(kitchen[order - 1])
+    #else:
+       # print("not in our menu")
+
+
+    if order == 1:
+        print("🍔")
+    elif order == 2:
+        print("🍟")
+    elif order == 3:
+        print("🥤")
+    elif order == 4:
+        print("🍦")
+    elif order == 5:
+        print("🍪")
     else:
         print("not in our menu")
-
-
-    #if order == 1:
-        #print("🍔")
-    #elif order == 2:
-        #print("🍟")
-    #elif order == 3:
-        #print("🥤")
-    #elif order == 4:
-        #print("🍦")
-    #elif order == 5:
-        #print("🍪")
-    #else:
-        #print("not in our menu")
 
 if __name__=="__main__":
     main()
