@@ -4,8 +4,10 @@ def main():
 
 def binary_to_decimal():
 
-    binary_decimal = int(input("Enter a binary number: "))
+    binary_number = int(input("Enter a binary number: "))
 
+    binary_list = [16, 8, 4, 2, 1]
+    if 
 
 
     #decimal_number = (f"Decimal number: {}")
